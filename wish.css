@@ -20,7 +20,7 @@ html{
   position: absolute;
   top: 50%;
   opacity: 0;
-  animation: vem_feliz 2s ease-in-out 7s forwards;
+  animation: vem_feliz 2s ease-in-out 2s forwards;
 }
 .ano_novo{
   position: absolute;
@@ -41,18 +41,20 @@ html{
   font-weight: 700;
   color: #7a8fe8;
 }
+/* 4 animation time */
 span.seis{
   position: absolute;
   top: 50%;
   right: 50%;
   margin-right: -200px;
-  animation: vai_2016 5s ease-in-out 5s forwards;
+  animation: vai_2016 2.5s ease-in-out 2.5s forwards;
 }
+/* 5 animation time */
 span.sete{
   position: absolute;
   right: 0%;
   margin-right: -200px;
-  animation: vem_2017 6s ease-in-out forwards;
+  animation: vem_2017 3s ease-in-out forwards;
 }
 span.sete:before{
   content: '';
@@ -67,7 +69,7 @@ span.sete:before{
   top: 55px;
   left: 10px;
   z-index: -1;
-  animation: entrega_balao 1s ease-in-out 4s;
+  animation: entrega_balao 1s ease-in-out 1.5s;
 }
 .balao{
   width: 100px;
@@ -80,8 +82,9 @@ span.sete:before{
   margin-top: -165px;
   right: 0%;
   margin-right: -200px;
-  animation: vem_e_vai_balao 10s ease-in-out forwards;
+  animation: vem_e_vai_balao 5s ease-in-out forwards;
 }
+
 .balao:before{
   content: '';
   width: 0;
@@ -120,7 +123,7 @@ span.sete:before{
   border: 2px solid #fff;
   position: absolute;
   opacity: 0;
-  animation: solta_fogos 1.5s ease-in-out 8s forwards;
+  animation: solta_fogos 1.5s ease-in-out 3s forwards;
 }
 .fogos>div.f1{
   left: 20%;
@@ -146,7 +149,7 @@ span.sete:before{
   top: 0;
   left: 0;
   opacity: 0;
-  animation: estoura_fogos 0.5s ease-in-out 9s forwards;
+  animation: estoura_fogos 0.5s ease-in-out 3s forwards;
 }
 .fogos>div span:nth-child(1){
   transform: rotate(0deg);
@@ -229,9 +232,53 @@ span.sete:before{
 
 /* Mobile-specific styling */
 @media (max-width: 768px) {
+  
   .author {
     font-size: 18px !important; /* 20px smaller than the default */
   }
+  /* 4 animation time */
+span.seis{
+  position: absolute;
+  top: 50%;
+  right: 50%;
+  margin-right: -200px;
+  animation: vai_2016 1.5s ease-in-out 1.5s forwards;
+}
+/* 5 animation time */
+span.sete{
+  position: absolute;
+  right: 0%;
+  margin-right: -200px;
+  animation: vem_2017 2s ease-in-out forwards;
+}
+span.sete:before{
+  content: '';
+  width: 0px;
+  height: 6px;
+  display: block;
+  border-radius: 3px;
+  background: #7a8fe8;
+  transform: rotate(0deg);
+  transform-origin: left top;
+  position: absolute;
+  top: 55px;
+  left: 10px;
+  z-index: -1;
+  animation: entrega_balao 1s ease-in-out 1s;
+}
+.balao{
+  width: 100px;
+  height: 100px;
+  display: block;
+  background: #e8d57a;
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  margin-top: -165px;
+  right: 0%;
+  margin-right: -200px;
+  animation: vem_e_vai_balao 3s ease-in-out forwards;
+}
 }
 /* Hover effects */
 .author:hover {

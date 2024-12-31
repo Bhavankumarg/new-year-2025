@@ -104,3 +104,16 @@ document.addEventListener('mouseup', handleMouseUp)
 document.addEventListener('touchstart', handleMouseDown)
 document.addEventListener('touchmove', handleMouseMove)
 document.addEventListener('touchend', handleMouseUp)
+
+
+
+// Select the button
+const ctaButton = document.getElementById("cta-button");
+
+// Function to show the button after the animation
+function showButton() {
+  ctaButton.style.display = "flex";
+}
+
+// Wait for the animation to complete (5 seconds here)
+setTimeout(showButton, 5000);
